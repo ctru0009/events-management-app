@@ -4,7 +4,15 @@ This is an application developed by me (Cong Chuong) and my teammate (Qian) in a
 
 # Demo images
 1. Add Category
-![Add Category](/img/add-category.png)
+![image](https://github.com/ctru0009/events-management-app/blob/main/img/add_category.png)
+2. List Category
+![image](https://github.com/ctru0009/events-management-app/blob/main/img/list_category.png)
+3. Delete Category
+![image](https://github.com/ctru0009/events-management-app/blob/main/img/delete_category.png)
+4. Update Category
+![image](https://github.com/ctru0009/events-management-app/blob/main/img/update_category.png)
+5. Detail Category
+![image](https://github.com/ctru0009/events-management-app/blob/main/img/detail_category.png)
 
 # Technology Used
 Technologies Used

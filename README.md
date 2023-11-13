@@ -63,7 +63,7 @@ Angular Endpoints
 1. Clone the repository
 
 ```
-https://git.infotech.monash.edu/fit2095-teams-s2-23/Lab01-Team-19/assignment-3.git
+https://github.com/ctru0009/events-management-app.git
 ```
 
 2. Open the terminal and navigate to the project folder
@@ -78,7 +78,7 @@ https://git.infotech.monash.edu/fit2095-teams-s2-23/Lab01-Team-19/assignment-3.g
 3. Clone the repository
 
 ```
-https://git.infotech.monash.edu/fit2095-teams-s2-23/Lab01-Team-19/assignment-3.git
+https://github.com/ctru0009/events-management-app.git
 ```
 
 4. Enter username and password for verification

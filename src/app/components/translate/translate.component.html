@@ -1,0 +1,63 @@
+
+<div class="text-center">
+    <h1 class="my-2">Translator</h1>
+    <h6>Enter text below to translate</h6>
+</div>
+<div class="row row-cols-1 row-cols-sm-2 g-3 justify-content-center">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="form-group">
+                <h5>Input Text </h5>
+                <input type="text" [(ngModel)]="inputText" class="form-control" name="eventName" placeholder="Enter text" required>
+            </div>
+            <br>
+            <div class="form-group"> 
+                <h5>Target language </h5>
+                <select [(ngModel)]="language" name="language" class="form-control" id="language" required>
+                    <option value="" disabled selected>Select the target language</option>
+                    <option value="zh">Chinese</option>
+                    <option value="ms">Malay</option>
+                    <option value="ja">Japanese</option>
+                </select>
+            </div>
+            <br>
+            <button  (click)="translate()" type="submit" class="btn btn-primary">Convert</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="row row-cols-1 g-3 album py-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" class="border-bottom">Text</th>
+                        <th scope="col" class="border-bottom">Target Language</th>
+                        <th scope="col" class="border-bottom">Translation</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let text of translatedTexts">
+                        <td><b>{{text[0]}}</b></td>
+
+                        <td *ngIf="text[1] === 'zh'"> 
+                            {{ "Chinese (zh)" }}
+                        </td>
+                        <td *ngIf="text[1] == 'ms'"> 
+                            {{ "Malay (ms)" }}
+                        </td>
+                        <td *ngIf="text[1] == 'ja'"> 
+                            {{ "Japanese (ja)" }}
+                        </td>
+
+                        <td>{{text[2]}}</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

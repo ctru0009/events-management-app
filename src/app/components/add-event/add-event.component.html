@@ -1,0 +1,49 @@
+<div class="text-center">
+    <h1>Add Event</h1>
+    <h6>Fill in event details & click submit</h6>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 g-3 justify-content-center">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="form-group">
+                Name <input type="text" [(ngModel)]="eventName" class="form-control" name="eventName" placeholder="Enter event name" required>
+            </div>
+
+            <div class="form-group">
+                Description <input type="text" [(ngModel)]="eventDescription" class="form-control" name="eventDescription">
+            </div>
+
+            <div class="form-group">
+                Image <input type="text" [(ngModel)]="eventImage" class="form-control" name="eventImage" placeholder="Enter static resource path" >
+            </div>
+
+            <div class="form-group">
+                Start Date Time <input type="datetime-local" [(ngModel)]="eventStartDateTime" id="myLocalDate" step="2" class="form-control" name="eventStartDateTime" required/>                
+            </div>
+
+            <div class="form-group">
+                Duration In Minutes <input type="text" [(ngModel)]="eventDurationInMin" class="form-control" name="eventDurationInMin" placeholder="Event duration in minutes" required>
+            </div>
+
+            Is Active <div class="form-check"> 
+                <input class="form-check-input" [(ngModel)]="eventIsActive" type="checkbox" name="eventIsActive" checked>
+            </div>
+
+            <div class="form-group">
+                Capacity <input type="text" [(ngModel)]="eventCapacity" class="form-control" name="eventCapacity" placeholder="Event capacity">
+            </div>
+
+            <div class="form-group">
+                Tickets Available <input type="text" [(ngModel)]="eventTicketsAvailable" class="form-control" name="eventTicketsAvailable" placeholder="Tickets Available (optional)">
+            </div>
+
+            <div class="form-group">
+                Category Id <input type="text" [(ngModel)]="eventCategoryId" class="form-control" name="eventCategoryId" placeholder="Enter category Id" required>
+            </div>
+            
+            <button type="submit" (click)="addEvent()" class="btn btn-primary" name="eventAddSubmit">Submit</button>
+
+        </div>
+    </div>
+</div>

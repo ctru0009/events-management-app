@@ -1,0 +1,16 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12 p-3">
+            <h1 class="text-center">Text to Speech</h1>
+            <input [(ngModel)]="text" class="text-center input-group input-group-lg"
+                placeholder="Enter text to convert to speech">
+            <div class="p-3">
+                <a (click)="convertToSpeech()" class="btn btn-primary btn-block w-20">Convert</a>
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <audio id="audio" [src]="audioSource" type="audio/mpeg" controls>
+            </audio>
+        </div>
+    </div>

@@ -1,0 +1,34 @@
+<img src="../../../assets/{{eventDetail.image? eventDetail.image:'Event_Detail.png'}}"  alt="Header Image" width="100%" height="auto">
+
+<div class="container p-3">
+    <div class="card shadow">
+      <div class="card-header">
+        <h1 class="text-center">Event Page</h1>
+        <div class="card-body">
+          <h3>{{ eventDetail.name }}</h3>
+          <label style="font-weight: bold;" for="eventID">Event ID</label>
+          <p>{{ eventDetail.id }}</p>
+          <label style="font-weight: bold;" for="eventName">Name</label>
+          <p>{{ eventDetail.name }}</p>
+          <label style="font-weight: bold;" for="eventDesc">Description</label>
+          <p>{{ eventDetail.description }}</p>
+          <label style="font-weight: bold;" for="startDateTime">Start Date Time</label>
+          <p>{{ eventDetail.startDateTime | date: 'dd/MM/yyyy, h:mm a' }}</p>
+          <label style="font-weight: bold;" for="endDateTime">End Date Time</label>
+          <p>{{ eventDetail.endDateTime | date: 'dd/MM/yyyy, h:mm a'}}</p>
+          <label style="font-weight: bold;" for="duration">Duration</label>
+          <p>{{ eventDetail.durationInMin | durationFormat }}</p>
+          <label style="font-weight: bold;" for="isActive">Is Active</label>
+          <p>{{ eventDetail.isActive }}</p>
+          <label style="font-weight: bold;" for="capacity">Capacity</label>
+          <p>{{ eventDetail.capacity }}</p>
+          <label style="font-weight: bold;" for="ticketsAvailable">Tickets Available </label>
+          <p>{{ eventDetail.ticketsAvailable }}</p>
+          <label style="font-weight: bold;" for="categoryId">Category Id</label>
+          <p>{{ eventDetail.categoryId }}</p>
+        </div>
+
+      
+      </div>
+    </div>
+</div> 

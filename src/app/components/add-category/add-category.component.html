@@ -1,0 +1,35 @@
+<div class="text-center">
+    <h1 class="my-2">Add Category</h1>
+    <h6>Fill in category details & click submit</h6>
+</div>
+<div class="row row-cols-1 row-cols-sm-2 g-3 justify-content-center">
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form (ngSubmit)="addCategory()" #addCategoryForm="ngForm">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Category Name</label>
+                        <input type="text" class="form-control" id="categoryName" name="categoryName"
+                            placeholder="Enter category name" [(ngModel)]="categoryName" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <input type="text" class="form-control" id="categoryDescription" name="categoryDescription"
+                            placeholder="Enter categrory description" [(ngModel)]="categoryDescription" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Image</label>
+                        <input type="text" class="form-control" id="categoryImage" name="categoryImage"
+                            placeholder="Enter static resource path" [(ngModel)]="categoryImage" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" name="categoryAddSubmit">
+                        Submit
+                    </button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<!-- FILEPATH: /src/app/components/delete-category/delete-category.component.html -->
+<div class="text-center">
+    <h1 class="my-2">Delete Category</h1>
+    <h6>Choose a category and click delete button to delete</h6>
+</div>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="row row-cols-1 g-3 album py-6">
+            <div class="col">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Image Path</th>
+                            <th scope="col">Created Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let category of eventCategories">
+                            <td><b>{{ category.id }}</b></td>
+                            <td>{{ category.name }}</td>
+                            <td>{{ category.description }}</td>
+                            <td>{{ category.image }}
+                                <img [src]="category.image" width="20%" height="15%" />
+                            </td>
+                            <td>{{ category.createdDate | date: 'medium' }}</td>
+                            <td>
+                                <a (click)="onDeleteCategory(category.id)" class="btn btn-primary btn-danger"
+                                    role="button">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

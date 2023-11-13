@@ -1,6 +1,6 @@
 # Event Manager Application
 
-This is an application developed by me (Cong Chuong) and my teammate (Qian) in an assigment in course FIT2095. We used the MEAN (MongoDB, Express, Angular and Node JS).  
+This is an application developed by me (Cong Chuong) and my teammate (Qian) in an assignment in course FIT2095. We used the MEAN (MongoDB, Express, Angular and Node JS).  
 
 # Demo images
 1. Add Category
@@ -81,14 +81,14 @@ https://github.com/ctru0009/events-management-app.git
 https://github.com/ctru0009/events-management-app.git
 ```
 
-4. Enter username and password for verification
+4. Enter username and password for verification (if required)
 5. Enter `ls` to look the the list of files
-6. Enter `cd assignment-3/`
+6. Enter `cd events-management-app`
 1. Edit the `constant.ts` in `src/app` to change the `BASE_URL` to the external IP address of the VM instance
 7. Run `npm install` to install all the dependencies
 1. Build the application by running `ng build`
 8. Run `npm start` to start the application
 9. Copy the external IP address of the VM instance
-10. enter nano/src/app/constant.ts 
-11. replace the 'localhost' with the external IP address followed by :8080
+10. Enter `nano /src/app/constant.ts` to edit the `BASE_URL 
+11. Replace the 'localhost' with the external IP address followed by `:8080`
 12. Open a new browser and paste the IP address followed by to `:8080` to view the application
